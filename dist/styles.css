@@ -504,6 +504,11 @@ dialog{position:fixed;background:var(--navy-soft);color:var(--cream);padding:0;b
 .hero-copy{position:relative;z-index:2;width:min(610px,55%);padding-top:0}
 .hero-details{border-color:#ffffff35}
 .hero-mobile-background{display:none}
+.brand-wordmark{display:block;text-align:center;white-space:nowrap}
+.brand-main{display:block;color:var(--cream);font:400 28px/.95 var(--display);letter-spacing:.2px}
+.brand-main em{color:var(--gold);font-size:21px}
+.brand-sub{display:block;margin-top:6px;color:var(--gold);font:400 6px/1.5 var(--body);letter-spacing:4px}
+@media print{.agenda-intro:before{content:'10 EM 3 EXPERIENCE'}}
 @media(max-width:900px){.hero{background-position:center right 38%}.hero-inner{min-height:640px;padding-top:68px;padding-bottom:65px}.hero-copy{width:min(560px,68%)}}
 @media(max-width:650px){.hero{background:var(--navy)}.hero-inner{min-height:0;padding-top:56px;padding-bottom:34px}.hero-copy{width:100%;max-width:470px}.hero-eyebrow{margin-bottom:25px}.hero-description{max-width:390px}.hero-details{margin-top:35px;gap:20px}.hero-mobile-background{display:block;height:360px;background:linear-gradient(0deg,#07111d30,transparent 35%),url("assets/executivos-mobile.png") center bottom/cover no-repeat}.hero-bottom{height:auto;min-height:66px;gap:16px}.hero-bottom>a{gap:10px}}
 

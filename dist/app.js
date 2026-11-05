@@ -1,6 +1,6 @@
 const program = [
   { time: '08h – 08h50', period: 'morning', title: 'Boas-vindas e credenciamento', text: 'O primeiro encontro. Chegue, conheça o espaço e comece suas conexões.', tag: 'RECEPÇÃO' },
-  { time: '09h – 09h20', period: 'morning', title: 'Abertura do Experience', text: 'Boas-vindas dos sócios e apresentação do propósito do Dez em Três.', tag: 'ABERTURA' },
+  { time: '09h – 09h20', period: 'morning', title: 'Abertura do Experience', text: 'Boas-vindas dos sócios e apresentação do propósito do 10 em 3.', tag: 'ABERTURA' },
   { time: '09h30 – 11h', period: 'morning', title: 'Reconhecer. Celebrar. Experienciar.', text: 'Homenagens, premiações e momentos de reconhecimento da comunidade.', tag: 'EXPERIÊNCIA' },
   { time: '11h – 12h', period: 'morning', title: 'Pausa para o almoço', text: 'Um intervalo para recarregar e continuar as conversas.', tag: 'INTERVALO' },
   { time: '12h – 12h30', period: 'afternoon', title: 'Retorno e networking', text: 'Novas conexões antes dos conteúdos da tarde.', tag: 'CONEXÕES' },
@@ -17,9 +17,9 @@ const speakers = {
   lucas: {
     name: 'Lucas Nicácio',
     announcement: 'assets/lucas-nicacio.png',
-    imageAlt: 'Lucas Nicácio, um dos idealizadores do Dez em Três Experience',
+    imageAlt: 'Lucas Nicácio, um dos idealizadores do 10 em 3 Experience',
     role: 'UM DOS IDEALIZADORES',
-    description: 'Lucas Nicácio é um dos idealizadores do Dez em Três Experience, um encontro que conecta inteligência, equilíbrio e resultados em uma programação de conhecimento, reconhecimento e networking.',
+    description: 'Lucas Nicácio é um dos idealizadores do 10 em 3 Experience, um encontro que conecta inteligência, equilíbrio e resultados em uma programação de conhecimento, reconhecimento e networking.',
   },
 };
 
@@ -97,9 +97,9 @@ document.querySelectorAll('[data-speaker]').forEach(button => button.addEventLis
   document.querySelector('#speaker-dialog-title').textContent = speaker.name;
   const image = document.querySelector('#speaker-announcement');
   image.src = speaker.announcement;
-  image.alt = speaker.imageAlt || `Anúncio de ${speaker.name}, palestrante confirmado no Dez em Três Experience`;
+  image.alt = speaker.imageAlt || `Anúncio de ${speaker.name}, palestrante confirmado no 10 em 3 Experience`;
   speakerDialog.querySelector('.eyebrow').textContent = speaker.role || 'PRESENÇA CONFIRMADA';
-  speakerDialog.querySelector('.speaker-dialog-copy > p:not(.eyebrow)').textContent = speaker.description || 'No palco do Dez em Três Experience. Tema e horário da participação serão divulgados em breve.';
+  speakerDialog.querySelector('.speaker-dialog-copy > p:not(.eyebrow)').textContent = speaker.description || 'No palco do 10 em 3 Experience. Tema e horário da participação serão divulgados em breve.';
   openDialog(speakerDialog);
 }));
 document.querySelector('#speaker-agenda-link').addEventListener('click', () => speakerDialog.close());
@@ -126,7 +126,7 @@ async function copyEventLink() {
 document.querySelector('#share-event').addEventListener('click', async () => {
   if (!navigator.share) { await copyEventLink(); return; }
   try {
-    await navigator.share({ title: 'Dez em Três Experience', text: 'Inteligência. Equilíbrio. Resultados. Conheça o Experience.', url: eventUrl() });
+    await navigator.share({ title: '10 em 3 Experience', text: 'Inteligência. Equilíbrio. Resultados. Conheça o Experience.', url: eventUrl() });
   } catch (error) {
     if (error.name !== 'AbortError') await copyEventLink();
   }
