@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520">
+  <defs>
+    <radialGradient id="backlight"><stop stop-color="#9a7540" stop-opacity=".35"/><stop offset="1" stop-color="#0a1521" stop-opacity="0"/></radialGradient>
+    <linearGradient id="outline" x2="0" y2="1"><stop stop-color="#c5a06b" stop-opacity=".6"/><stop offset="1" stop-color="#c5a06b" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path fill="#09131e" d="M0 0h420v520H0z"/>
+  <ellipse cx="210" cy="220" rx="190" ry="235" fill="url(#backlight)"/>
+  <path d="M210 85c-39 0-61 30-61 70v24c0 26 14 50 31 64v25c-8 12-24 19-47 26-47 15-72 42-81 97L33 520h354l-19-129c-9-55-34-82-81-97-23-7-39-14-47-26v-25c17-14 31-38 31-64v-24c0-40-22-70-61-70Z" fill="#030810" stroke="url(#outline)" stroke-width="1.4"/>
+</svg>

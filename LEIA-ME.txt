@@ -1,0 +1,30 @@
+DEZ EM TRÊS EXPERIENCE — CÓDIGO COMPLETO
+
+Conteúdo: HTML, CSS, JavaScript, imagens, fontes locais e configuração manual dos lotes.
+
+ABRIR LOCALMENTE
+1. Extraia o ZIP.
+2. Abra um terminal na pasta dez-em-tres-experience.
+3. Execute: python3 -m http.server 8000 --directory dist
+   No Windows, caso necessário: python -m http.server 8000 --directory dist
+4. Acesse http://localhost:8000 no navegador.
+
+EDITAR
+- Página: dist/index.html
+- Estilos: dist/styles.css
+- Interações e agenda: dist/app.js
+- Imagens e fontes: dist/assets
+
+LIBERAR OS LOTES MANUALMENTE
+1. Em config/lotes.mjs, altere ativo para true ou false no lote desejado.
+2. Com Node.js instalado, execute: node scripts/prepare-lotes.mjs
+3. Publique a pasta dist atualizada na hospedagem.
+
+Somente o Lote Fundador está ativo nesta versão.
+A liberação no site não altera o cadastro dos produtos na Kiwify.
+
+HOSPEDAR
+O site é estático. Publique o conteúdo de dist como raiz do site.
+Não há dependências JavaScript externas para instalar.
+O mapa e os checkouts precisam de acesso à internet.
+Veja README.md para detalhes do projeto.
