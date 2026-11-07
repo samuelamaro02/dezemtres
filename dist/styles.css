@@ -173,7 +173,7 @@ summary:focus-visible {
 }
 
 .eyebrow {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 2.2px;
   font-weight: 700
@@ -198,7 +198,7 @@ summary:focus-visible {
   background: var(--gold);
   color: var(--navy);
   border: 1px solid var(--gold);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.3;
   transition: background .25s, transform .25s;
@@ -221,14 +221,14 @@ summary:focus-visible {
   min-height: 43px;
   padding: 12px 19px;
   gap: 25px;
-  font-size: 12px
+  font-size: 14px
 }
 
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   font-weight: 700;
   background: none;
@@ -287,7 +287,7 @@ summary:focus-visible {
 }
 
 .desktop-nav a {
-  font-size: 12px;
+  font-size: 14px;
   color: #c5c7c9;
   position: relative;
   padding: 16px 0;
@@ -384,7 +384,7 @@ summary:focus-visible {
 .hero-eyebrow {
   color: var(--gold);
   margin-bottom: 32px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.4px
 }
 
@@ -416,7 +416,7 @@ h1 em {
 .hero-actions .text-link {
   font-weight: 400;
   color: #c4c6cb;
-  font-size: 12px
+  font-size: 14px
 }
 
 .hero-actions .text-link:hover {
@@ -449,14 +449,14 @@ h1 em {
 }
 
 .hero-details span {
-  font-size: 12px;
+  font-size: 14px;
   color: #929ba5;
   display: block;
   line-height: 1.6
 }
 
 .hero-details strong {
-  font-size: 12px;
+  font-size: 14px;
   display: block;
   color: #e0e0e0;
   font-weight: 400;
@@ -539,7 +539,7 @@ h1 em {
 
 .portrait-label span {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1.3px;
   color: var(--gold);
   margin-bottom: 7px
@@ -575,7 +575,7 @@ h1 em {
   right: -35px;
   top: 20px;
   writing-mode: vertical-rl;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 5px;
   color: #a28b64
 }
@@ -607,7 +607,7 @@ h1 em {
 }
 
 .visual-seal span {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   text-align: center;
   letter-spacing: 1.6px;
@@ -618,7 +618,7 @@ h1 em {
   position: absolute;
   left: 0;
   bottom: -34px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.2px;
   color: #7d8590
 }
@@ -651,7 +651,7 @@ h1 em {
 }
 
 .hero-bottom>span {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.3px;
   color: #a1a8ae
 }
@@ -665,7 +665,7 @@ h1 em {
 .hero-bottom>a {
   display: flex;
   gap: 25px;
-  font-size: 12px;
+  font-size: 14px;
   color: #a1a8ae
 }
 
@@ -708,7 +708,7 @@ h1 em {
 
 .principles-strip span {
   flex: 0 0 auto;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.6px;
   white-space: nowrap;
@@ -813,7 +813,7 @@ h2 {
 }
 
 .pillar-top>span {
-  font-size: 12px;
+  font-size: 14px;
   color: #8b7a61
 }
 
@@ -831,7 +831,7 @@ h2 {
 
 .pillar p {
   color: #686965;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.9;
   max-width: 260px;
   min-height: 73px
@@ -839,7 +839,7 @@ h2 {
 
 .pillar-foot {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.25px;
   color: #9a7b50;
@@ -861,7 +861,7 @@ h2 {
 }
 
 .experience-note p {
-  font-size: 12px;
+  font-size: 14px;
   color: #6c6d69
 }
 
@@ -906,7 +906,7 @@ h2 {
 
 .speakers-heading>p {
   max-width: 310px;
-  font-size: 13px;
+  font-size: 14px;
   color: #939da8;
   line-height: 1.9;
   padding-bottom: 5px
@@ -969,7 +969,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1.5px;
   padding: 8px 11px;
   background: #050d168c;
@@ -1004,7 +1004,7 @@ h2 {
 
 .speaker-info>div>span {
   color: var(--gold);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1.9px
 }
 
@@ -1040,7 +1040,7 @@ h2 {
   justify-content: space-between;
   gap: 20px;
   padding-top: 24px;
-  font-size: 12px;
+  font-size: 14px;
   color: #7e8994
 }
 
@@ -1069,7 +1069,7 @@ h2 {
 }
 
 .agenda-intro>p:not(.eyebrow):not(.agenda-disclaimer) {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.9;
   color: #6b6d68;
   max-width: 290px;
@@ -1101,18 +1101,18 @@ h2 {
 .agenda-time span {
   display: block;
   margin-top: 3px;
-  font-size: 12px;
+  font-size: 14px;
   color: #73766f
 }
 
 .print-button {
   margin-top: 29px;
   color: #93703a;
-  font-size: 12px
+  font-size: 14px
 }
 
 .agenda-disclaimer {
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 1.9;
   color: #8b8b80;
   margin-top: 27px
@@ -1128,7 +1128,7 @@ h2 {
 
 .agenda-filter button {
   border: 1px solid transparent;
-  font-size: 12px;
+  font-size: 14px;
   color: #7b7c73;
   background: none;
   min-height: 37px;
@@ -1155,14 +1155,14 @@ h2 {
 }
 
 .agenda-item-time {
-  font-size: 12px;
+  font-size: 14px;
   color: #8e7047;
   padding-top: 2px;
   white-space: nowrap
 }
 
 .agenda-tag {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.6px;
   color: #9a8058;
@@ -1176,7 +1176,7 @@ h2 {
 }
 
 .agenda-item p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   color: #777970;
   margin-top: 8px;
@@ -1184,7 +1184,7 @@ h2 {
 }
 
 .agenda-bottom-note {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   color: #8b8b80;
   margin-top: 21px
@@ -1225,7 +1225,7 @@ h2 {
 }
 
 .connections .eyebrow {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2px
 }
 
@@ -1243,7 +1243,7 @@ h2 {
 }
 
 .connections p:not(.eyebrow) {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   color: #98a1aa;
   max-width: 440px;
@@ -1258,7 +1258,7 @@ h2 {
 }
 
 .connection-tags>span {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: .3px;
   border: 1px solid #dfb57530;
   color: #c9b391;
@@ -1281,7 +1281,7 @@ h2 {
 }
 
 .faq-intro>p:last-child {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   color: #6b6d68;
   max-width: 260px;
@@ -1303,7 +1303,7 @@ h2 {
   align-items: center;
   gap: 25px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   padding: 23px 0
 }
 
@@ -1323,7 +1323,7 @@ h2 {
 }
 
 .faq-list details>p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   color: #75766e;
   padding: 0 30px 24px 0;
@@ -1357,7 +1357,7 @@ h2 {
 
 .final-cta .eyebrow {
   color: var(--gold);
-  font-size: 12px
+  font-size: 14px
 }
 
 .final-cta h2 {
@@ -1371,7 +1371,7 @@ h2 {
 
 .final-cta p:not(.eyebrow) {
   color: #afb1af;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   margin-top: 24px
 }
@@ -1387,7 +1387,7 @@ h2 {
   align-items: center;
   gap: 7px;
   margin-top: 19px;
-  font-size: 12px;
+  font-size: 14px;
   color: #a1a4a4
 }
 
@@ -1422,7 +1422,7 @@ h2 {
 
 .footer-brand>span {
   display: block;
-  font: 400 12px/1.5 var(--body);
+  font: 400 14px/1.5 var(--body);
   letter-spacing: 5px;
   text-align: center;
   margin-top: 7px;
@@ -1430,12 +1430,12 @@ h2 {
 }
 
 .footer-main>p {
-  font-size: 12px;
+  font-size: 14px;
   color: #8b959e
 }
 
 .footer-main .text-link {
-  font-size: 12px;
+  font-size: 14px;
   color: #b9b9b5;
   font-weight: 400
 }
@@ -1451,7 +1451,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ffffff0e;
-  font-size: 12px;
+  font-size: 14px;
   color: #77818b
 }
 
@@ -1510,7 +1510,7 @@ dialog::backdrop {
 
 .registration-dialog .eyebrow {
   color: var(--gold);
-  font-size: 12px
+  font-size: 14px
 }
 
 .registration-dialog h2 {
@@ -1524,7 +1524,7 @@ dialog::backdrop {
 
 .registration-dialog>p:not(.eyebrow):not(.dialog-footnote) {
   color: #aab1b7;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   margin-top: 24px
 }
@@ -1546,33 +1546,33 @@ dialog::backdrop {
 
 .dialog-event-detail strong {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400
 }
 
 .dialog-event-detail span {
   display: block;
   color: #88939e;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 4px
 }
 
 .registration-dialog>.button {
   width: 100%;
-  font-size: 12px
+  font-size: 14px
 }
 
 .dialog-share {
   display: flex;
   justify-content: center;
   margin: 23px auto;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--gold);
   font-weight: 400
 }
 
 .dialog-footnote {
-  font-size: 12px;
+  font-size: 14px;
   color: #7c8894;
   line-height: 1.7;
   text-align: center
@@ -1601,7 +1601,7 @@ dialog::backdrop {
 }
 
 .speaker-dialog-copy .eyebrow {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--gold)
 }
 
@@ -1611,7 +1611,7 @@ dialog::backdrop {
 }
 
 .speaker-dialog-copy>p:not(.eyebrow) {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   color: #99a3ad;
   margin-top: 23px
@@ -1620,7 +1620,7 @@ dialog::backdrop {
 .speaker-dialog-copy .text-link {
   margin-top: 28px;
   color: var(--gold);
-  font-size: 12px
+  font-size: 14px
 }
 
 .toast {
@@ -1633,7 +1633,7 @@ dialog::backdrop {
   color: var(--navy);
   padding: 14px 23px;
   box-shadow: 0 8px 30px #0004;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   max-width: calc(100% - 40px);
   min-width: 230px
@@ -1670,7 +1670,7 @@ dialog::backdrop {
   }
 
   .hero-actions .text-link {
-    font-size: 12px;
+    font-size: 14px;
     gap: 10px
   }
 }
@@ -1707,11 +1707,11 @@ dialog::backdrop {
   }
 
   .hero-details span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-details strong {
-    font-size: 12px
+    font-size: 14px
   }
 
   h1 {
@@ -1728,7 +1728,7 @@ dialog::backdrop {
   }
 
   .portrait-label span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .visual-seal {
@@ -1739,7 +1739,7 @@ dialog::backdrop {
   }
 
   .visual-seal span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .visual-seal svg {
@@ -1773,7 +1773,7 @@ dialog::backdrop {
   }
 
   .principles-strip span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px
   }
 
@@ -1825,26 +1825,26 @@ dialog::backdrop {
   }
 
   .hero-eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.6px;
     margin-bottom: 27px
   }
 
   .hero-description {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     margin-top: 23px
   }
 
   .hero-actions .button {
-    font-size: 12px;
+    font-size: 14px;
     padding: 16px;
     gap: 18px;
     min-height: 50px
   }
 
   .hero-actions .text-link {
-    font-size: 12px;
+    font-size: 14px;
     gap: 10px
   }
 
@@ -1860,7 +1860,7 @@ dialog::backdrop {
   }
 
   .hero-details strong {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-visual {
@@ -1886,7 +1886,7 @@ dialog::backdrop {
 
   .portrait-label span {
     letter-spacing: .8px;
-    font-size: 12px
+    font-size: 14px
   }
 
   .visual-seal {
@@ -1897,7 +1897,7 @@ dialog::backdrop {
   }
 
   .visual-seal span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px
   }
 
@@ -1908,19 +1908,19 @@ dialog::backdrop {
   }
 
   .visual-index {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.4px;
     bottom: -29px
   }
 
   .vertical-word {
-    font-size: 12px;
+    font-size: 14px;
     right: -24px;
     top: -15px
   }
 
   .hero-bottom>span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.3px
   }
 
@@ -1929,12 +1929,12 @@ dialog::backdrop {
   }
 
   .hero-bottom>a {
-    font-size: 12px;
+    font-size: 14px;
     gap: 12px
   }
 
   .principles-strip span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .6px
   }
 
@@ -1955,7 +1955,7 @@ dialog::backdrop {
   }
 
   .experience-heading>p:last-child {
-    font-size: 12px
+    font-size: 14px
   }
 
   .pillar {
@@ -1971,11 +1971,11 @@ dialog::backdrop {
   }
 
   .pillar p {
-    font-size: 12px
+    font-size: 14px
   }
 
   .pillar-foot {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px
   }
 
@@ -1992,7 +1992,7 @@ dialog::backdrop {
   }
 
   .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     top: 17px;
     left: 17px;
@@ -2005,7 +2005,7 @@ dialog::backdrop {
 
   .speakers-heading>p {
     max-width: 240px;
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-layout {
@@ -2023,7 +2023,7 @@ dialog::backdrop {
   }
 
   .agenda-item-time {
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-item h3 {
@@ -2031,24 +2031,24 @@ dialog::backdrop {
   }
 
   .agenda-item p {
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-tag {
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-filter button {
-    font-size: 12px;
+    font-size: 14px;
     padding-inline: 11px
   }
 
   .agenda-intro>p:not(.eyebrow):not(.agenda-disclaimer) {
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-time span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .faq-layout {
@@ -2061,12 +2061,12 @@ dialog::backdrop {
   }
 
   .faq-list summary {
-    font-size: 12px;
+    font-size: 14px;
     padding: 20px 0
   }
 
   .footer-main>p {
-    font-size: 12px
+    font-size: 14px
   }
 
   .connections h2 {
@@ -2074,7 +2074,7 @@ dialog::backdrop {
   }
 
   .eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.8px
   }
 }
@@ -2103,7 +2103,7 @@ dialog::backdrop {
   }
 
   .header-cta {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 13px;
     gap: 13px;
     min-height: 38px
@@ -2134,7 +2134,7 @@ dialog::backdrop {
   }
 
   .hero-eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.8px;
     margin-bottom: 24px
   }
@@ -2152,7 +2152,7 @@ dialog::backdrop {
   }
 
   .hero-description {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 380px;
     line-height: 1.9;
     margin-top: 22px
@@ -2171,11 +2171,11 @@ dialog::backdrop {
     min-height: 51px;
     padding: 16px 20px;
     gap: 28px;
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-actions .text-link {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-details {
@@ -2192,11 +2192,11 @@ dialog::backdrop {
   }
 
   .hero-details span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-details strong {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-details>div {
@@ -2230,7 +2230,7 @@ dialog::backdrop {
   }
 
   .portrait-label span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px
   }
 
@@ -2246,7 +2246,7 @@ dialog::backdrop {
   }
 
   .visual-seal span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .visual-seal svg {
@@ -2258,12 +2258,12 @@ dialog::backdrop {
   .vertical-word {
     right: -21px;
     top: 0;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 3.5px
   }
 
   .visual-index {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.4px;
     bottom: -29px
   }
@@ -2273,7 +2273,7 @@ dialog::backdrop {
   }
 
   .hero-bottom>span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px
   }
 
@@ -2282,7 +2282,7 @@ dialog::backdrop {
   }
 
   .hero-bottom>a {
-    font-size: 12px;
+    font-size: 14px;
     gap: 0
   }
 
@@ -2291,7 +2291,7 @@ dialog::backdrop {
   }
 
   .principles-strip span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .8px
   }
 
@@ -2318,7 +2318,7 @@ dialog::backdrop {
   }
 
   .experience-heading>p:last-child {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.9;
     max-width: 360px;
     margin-top: 25px
@@ -2354,7 +2354,7 @@ dialog::backdrop {
   }
 
   .pillar-top>span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .pillar-icon {
@@ -2368,14 +2368,14 @@ dialog::backdrop {
   }
 
   .pillar p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     max-width: 310px;
     min-height: 0
   }
 
   .pillar-foot {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 14px;
     letter-spacing: 1px
   }
@@ -2391,7 +2391,7 @@ dialog::backdrop {
   }
 
   .experience-note p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8
   }
 
@@ -2416,7 +2416,7 @@ dialog::backdrop {
   }
 
   .speakers-heading>p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.9;
     max-width: 330px;
     margin-top: 24px
@@ -2440,7 +2440,7 @@ dialog::backdrop {
   }
 
   .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .4px;
     gap: 5px;
     top: 12px;
@@ -2466,7 +2466,7 @@ dialog::backdrop {
   }
 
   .speaker-info>div>span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.2px
   }
 
@@ -2491,7 +2491,7 @@ dialog::backdrop {
   .speakers-footer {
     padding-top: 20px;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8
   }
 
@@ -2520,7 +2520,7 @@ dialog::backdrop {
   .agenda-intro>p:not(.eyebrow):not(.agenda-disclaimer) {
     margin-top: 21px;
     max-width: 340px;
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-time {
@@ -2534,7 +2534,7 @@ dialog::backdrop {
   }
 
   .agenda-time span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .print-button {
@@ -2542,7 +2542,7 @@ dialog::backdrop {
   }
 
   .agenda-disclaimer {
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin-top: 17px
   }
 
@@ -2556,7 +2556,7 @@ dialog::backdrop {
   }
 
   .agenda-filter button {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 14px
   }
 
@@ -2567,7 +2567,7 @@ dialog::backdrop {
   }
 
   .agenda-item-time {
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-item h3 {
@@ -2575,17 +2575,17 @@ dialog::backdrop {
   }
 
   .agenda-item p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8
   }
 
   .agenda-tag {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.3px
   }
 
   .agenda-bottom-note {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 340px;
     line-height: 1.9
   }
@@ -2595,7 +2595,7 @@ dialog::backdrop {
   }
 
   .connections .eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.4px
   }
 
@@ -2610,7 +2610,7 @@ dialog::backdrop {
   }
 
   .connections p:not(.eyebrow) {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 310px;
     margin-top: 24px
   }
@@ -2621,7 +2621,7 @@ dialog::backdrop {
   }
 
   .connection-tags>span {
-    font-size: 12px;
+    font-size: 14px;
     padding: 6px 10px
   }
 
@@ -2654,7 +2654,7 @@ dialog::backdrop {
   }
 
   .faq-intro>p:last-child {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 21px;
     max-width: 300px
   }
@@ -2664,13 +2664,13 @@ dialog::backdrop {
   }
 
   .faq-list summary {
-    font-size: 12px;
+    font-size: 14px;
     padding: 21px 0;
     gap: 20px
   }
 
   .faq-list details>p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.9;
     padding-right: 20px
   }
@@ -2686,25 +2686,25 @@ dialog::backdrop {
   }
 
   .final-cta .eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.7px
   }
 
   .final-cta p:not(.eyebrow) {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 290px;
     margin: 24px auto 0
   }
 
   .final-cta .button {
-    font-size: 12px;
+    font-size: 14px;
     padding: 16px 21px;
     min-height: 52px;
     margin-top: 27px
   }
 
   .cta-note {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 16px
   }
 
@@ -2721,25 +2721,25 @@ dialog::backdrop {
   }
 
   .footer-brand>span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .footer-main>p {
-    font-size: 12px
+    font-size: 14px
   }
 
   .footer-main .text-link {
-    font-size: 12px
+    font-size: 14px
   }
 
   .footer-bottom {
     padding-block: 20px;
-    font-size: 12px;
+    font-size: 14px;
     gap: 20px
   }
 
   .eyebrow {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.7px
   }
 
@@ -2753,7 +2753,7 @@ dialog::backdrop {
   }
 
   .registration-dialog>p:not(.eyebrow):not(.dialog-footnote) {
-    font-size: 12px
+    font-size: 14px
   }
 
   .dialog-star {
@@ -2781,7 +2781,7 @@ dialog::backdrop {
   }
 
   .speaker-dialog-copy>p:not(.eyebrow) {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 15px
   }
 
@@ -2790,7 +2790,7 @@ dialog::backdrop {
   }
 
   .toast {
-    font-size: 12px;
+    font-size: 14px;
     bottom: 18px;
     padding: 12px 17px;
     line-height: 1.7
@@ -2805,7 +2805,7 @@ dialog::backdrop {
   .header-cta {
     gap: 8px;
     padding-inline: 10px;
-    font-size: 12px
+    font-size: 14px
   }
 
   .brand,
@@ -2832,11 +2832,11 @@ dialog::backdrop {
   }
 
   .hero-details span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-details strong {
-    font-size: 12px
+    font-size: 14px
   }
 
   .portrait-label strong {
@@ -2844,7 +2844,7 @@ dialog::backdrop {
   }
 
   .portrait-label span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .visual-seal {
@@ -2853,7 +2853,7 @@ dialog::backdrop {
   }
 
   .visual-seal span {
-    font-size: 12px
+    font-size: 14px
   }
 
   .hero-bottom>span {
@@ -2874,7 +2874,7 @@ dialog::backdrop {
   }
 
   .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0
   }
 
@@ -2884,7 +2884,7 @@ dialog::backdrop {
   }
 
   .agenda-item-time {
-    font-size: 12px
+    font-size: 14px
   }
 
   .agenda-item h3 {
@@ -2910,7 +2910,7 @@ dialog::backdrop {
 }
 
 .visual-seal span {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1.2px
 }
 
@@ -2929,7 +2929,7 @@ dialog::backdrop {
   }
 
   .visual-seal span {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .8px
   }
 
@@ -2967,7 +2967,7 @@ dialog::backdrop {
   body {
     background: white !important;
     color: #111 !important;
-    font-size: 10pt
+    font-size: 14px
   }
 
   .site-header,
@@ -3006,7 +3006,7 @@ dialog::backdrop {
 
   .agenda-intro:before {
     content: 'DEZ EM TRÃŠS EXPERIENCE';
-    font-size: 10pt;
+    font-size: 14px;
     letter-spacing: 2px;
     display: block;
     margin-bottom: 5mm
@@ -3034,7 +3034,7 @@ dialog::backdrop {
   }
 
   .agenda-disclaimer {
-    font-size: 9pt !important;
+    font-size: 14px !important;
     margin: 0 0 6mm !important;
     color: #444 !important
   }
@@ -3051,12 +3051,12 @@ dialog::backdrop {
   }
 
   .agenda-item-time {
-    font-size: 9pt !important;
+    font-size: 14px !important;
     color: #444 !important
   }
 
   .agenda-tag {
-    font-size: 9pt !important;
+    font-size: 14px !important;
     color: #666 !important;
     margin-bottom: 1mm
   }
@@ -3066,7 +3066,7 @@ dialog::backdrop {
   }
 
   .agenda-item p {
-    font-size: 9pt !important;
+    font-size: 14px !important;
     line-height: 1.4 !important;
     margin-top: 1mm !important;
     max-width: none !important;
@@ -3074,7 +3074,7 @@ dialog::backdrop {
   }
 
   .agenda-bottom-note {
-    font-size: 9pt !important;
+    font-size: 14px !important;
     color: #666 !important
   }
 
@@ -3092,7 +3092,7 @@ dialog::backdrop {
 .hero-founder-credit {
   margin-top: 14px;
   color: #b4b8bd;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .hero-founder-credit a {
@@ -3158,7 +3158,7 @@ dialog::backdrop {
   display: block;
   margin-bottom: 9px;
   color: var(--gold);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.2px;
 }
 
@@ -3237,7 +3237,7 @@ dialog::backdrop {
   border: 1px solid #dfb57550;
   background: #050d16c0;
   color: var(--gold-light);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1.6px;
 }
 
@@ -3248,7 +3248,7 @@ dialog::backdrop {
 
 .founder-subtitle {
   color: var(--gold-light);
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 23px;
   margin-bottom: 22px;
 }
@@ -3256,7 +3256,7 @@ dialog::backdrop {
 .founder-copy>p:not(.eyebrow):not(.founder-subtitle) {
   margin-top: 14px;
   max-width: 400px;
-  font-size: 13px;
+  font-size: 14px;
   color: #9ba5ae;
   line-height: 1.9;
 }
@@ -3264,7 +3264,7 @@ dialog::backdrop {
 .founder-profile-button {
   margin-top: 28px;
   color: var(--gold);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .founder-section+.speakers {
@@ -3295,7 +3295,7 @@ dialog::backdrop {
   }
 
   .founder-role {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.7px;
   }
 
@@ -3334,7 +3334,7 @@ dialog::backdrop {
   }
 
   .founder-role {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.3px;
   }
 
@@ -3365,18 +3365,18 @@ dialog::backdrop {
   }
 
   .founder-copy>p:not(.eyebrow):not(.founder-subtitle) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .founder-subtitle {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
   }
 }
 
 @media (max-width: 650px) {
   .hero-founder-credit {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 310px;
     line-height: 1.8;
   }
@@ -3403,7 +3403,7 @@ dialog::backdrop {
   }
 
   .founder-role {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.6px;
   }
 
@@ -3415,7 +3415,7 @@ dialog::backdrop {
   .hero-founder .visual-index {
     left: 0;
     bottom: -27px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .hero-founder .visual-seal {
@@ -3442,16 +3442,16 @@ dialog::backdrop {
   .founder-subtitle {
     padding-top: 21px;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .founder-copy>p:not(.eyebrow):not(.founder-subtitle) {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 360px;
   }
 
   .founder-profile-button {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 23px;
   }
 
@@ -3466,7 +3466,7 @@ dialog::backdrop {
   }
 
   .founder-photo-tag {
-    font-size: 12px;
+    font-size: 14px;
     left: 18px;
     bottom: 18px;
   }
@@ -3506,11 +3506,11 @@ dialog::backdrop {
   }
 
   .speaker-info>div>span {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     gap: 7px;
     top: 17px;
@@ -3572,7 +3572,7 @@ dialog::backdrop {
 .tickets-heading>p {
   max-width: 290px;
   color: #6b6d68;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.9;
   padding-bottom: 6px;
 }
@@ -3597,7 +3597,7 @@ dialog::backdrop {
   display: block;
   margin-bottom: 22px;
   color: #96723e;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
@@ -3624,13 +3624,13 @@ dialog::backdrop {
 }
 
 .ticket-price>span:first-child {
-  font-size: 13px;
+  font-size: 14px;
   margin-right: 2px;
 }
 
 .ticket-unit {
   color: #7d7e75;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 5px;
 }
 
@@ -3641,7 +3641,7 @@ dialog::backdrop {
   padding-top: 20px;
   border-top: 1px solid var(--border-light);
   color: #777266;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .ticket-capacity .tiny-diamond {
@@ -3659,7 +3659,7 @@ dialog::backdrop {
   background: none;
   color: var(--ink);
   border-color: #b79b70;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .ticket-button svg {
@@ -3709,7 +3709,7 @@ dialog::backdrop {
   gap: 36px;
   margin-top: 25px;
   color: #837f75;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -3751,7 +3751,7 @@ dialog::backdrop {
   }
 
   .desktop-nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .ticket-grid {
@@ -3775,7 +3775,7 @@ dialog::backdrop {
   }
 
   .ticket-button {
-    font-size: 12px;
+    font-size: 14px;
     gap: 9px;
   }
 }
@@ -3795,7 +3795,7 @@ dialog::backdrop {
 
   .tickets-heading>p {
     max-width: 225px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .ticket-grid {
@@ -3818,12 +3818,12 @@ dialog::backdrop {
   }
 
   .ticket-button {
-    font-size: 12px;
+    font-size: 14px;
     gap: 20px;
   }
 
   .ticket-capacity {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .tickets-notes {
@@ -3851,7 +3851,7 @@ dialog::backdrop {
 
   .tickets-heading>p {
     max-width: 310px;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 24px;
   }
 
@@ -3867,7 +3867,7 @@ dialog::backdrop {
 
   .ticket-order {
     margin-bottom: 19px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .ticket-card h3 {
@@ -3885,25 +3885,25 @@ dialog::backdrop {
   }
 
   .ticket-unit {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .ticket-capacity {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 24px;
     padding-top: 19px;
   }
 
   .ticket-button {
     min-height: 49px;
-    font-size: 12px;
+    font-size: 14px;
     gap: 30px;
   }
 
   .tickets-notes {
     display: block;
     margin-top: 23px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .tickets-notes>span {
@@ -3929,7 +3929,7 @@ dialog::backdrop {
 .ticket-status {
   margin: -10px 0 16px;
   color: #816a47;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.1px;
 }
@@ -3996,12 +3996,12 @@ dialog::backdrop {
 .venue-type {
   margin-top: 8px;
   color: #8b7759;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .venue address {
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
   color: #73746c;
   line-height: 1.9;
   margin-top: 18px;
@@ -4024,19 +4024,19 @@ dialog::backdrop {
 
 .venue-date strong {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .venue-date span {
   display: block;
   color: #7f7e74;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 4px;
 }
 
 .venue .button {
-  font-size: 12px;
+  font-size: 14px;
   min-height: 49px;
 }
 
@@ -4060,7 +4060,7 @@ dialog::backdrop {
   gap: 15px;
   background: #ebe4d8;
   color: #7d6036;
-  font-size: 12px;
+  font-size: 14px;
   padding: 15px 19px;
 }
 
@@ -4139,11 +4139,11 @@ dialog::backdrop {
   }
 
   .venue address {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .venue-type {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .venue-map {
@@ -4155,7 +4155,7 @@ dialog::backdrop {
   }
 
   .venue-map>a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .venue+.tickets {
@@ -4215,7 +4215,7 @@ dialog::backdrop {
   }
 
   .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     left: 15px;
     top: 15px;
@@ -4253,7 +4253,7 @@ dialog::backdrop {
   }
 
   .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     top: 17px;
     left: 17px;
@@ -4304,7 +4304,7 @@ dialog::backdrop {
 }
 
 .speaker-carousel .surprise-card .confirmed {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: .8px;
 }
 
@@ -4317,7 +4317,7 @@ dialog::backdrop {
 }
 
 .carousel-hint {
-  font-size: 12px;
+  font-size: 14px;
   color: #96a0aa;
 }
 
@@ -4328,7 +4328,7 @@ dialog::backdrop {
 }
 
 #speaker-carousel-position {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   color: var(--gold-light);
   min-width: 65px;
@@ -4378,7 +4378,7 @@ dialog::backdrop {
   }
 
   .speaker-carousel .surprise-card .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .5px;
   }
 }
@@ -4394,7 +4394,7 @@ dialog::backdrop {
   }
 
   .speaker-carousel .surprise-card .confirmed {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -4416,7 +4416,7 @@ dialog::backdrop {
   }
 
   .speaker-carousel .surprise-card .confirmed {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: .7px;
     left: 13px;
     top: 15px;
@@ -4436,7 +4436,7 @@ dialog::backdrop {
   }
 
   .carousel-hint {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 110px;
   }
 
@@ -4450,7 +4450,7 @@ dialog::backdrop {
   }
 
   #speaker-carousel-position {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 4px;
     min-width: 52px;
   }
@@ -4545,7 +4545,7 @@ dialog::backdrop {
 .founder-copy .founder-offer p {
   margin-top: 6px;
   max-width: 400px;
-  font-size: 13px;
+  font-size: 14px;
   color: #9ba5ae;
   line-height: 1.8
 }
@@ -4677,9 +4677,9 @@ dialog::backdrop {
 /* T?tulos das palestras nos cards do carrossel. */
 .speaker-info{align-items:flex-start}
 .speaker-info>div{min-width:0;flex:1}
-.speaker-info .speaker-talk-title{max-width:380px;margin:9px 14px 0 0;color:#aab4bd;font-size:12px;line-height:1.5}
+.speaker-info .speaker-talk-title{max-width:380px;margin:9px 14px 0 0;color:#aab4bd;font-size:14px;line-height:1.5}
 .speaker-arrow{flex:0 0 42px;margin-top:7px}
-@media(max-width:650px){.speaker-info .speaker-talk-title{font-size:12px;line-height:1.45;margin-top:8px}}
+@media(max-width:650px){.speaker-info .speaker-talk-title{font-size:14px;line-height:1.45;margin-top:8px}}
 
 
-@media(max-width:650px){.hero-bottom>span{display:none}.hero-bottom>a{font-size:12px;gap:10px}}
+@media(max-width:650px){.hero-bottom>span{display:none}.hero-bottom>a{font-size:14px;gap:10px}}
