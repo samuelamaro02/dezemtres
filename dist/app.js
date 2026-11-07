@@ -6,7 +6,6 @@ const program = [
   { time: '12h30–13h20', period: 'afternoon', title: 'Palestra 1 – Vinícius', text: 'Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.', tag: 'PALESTRA 01' },
   { time: '13h30–14h20', period: 'afternoon', title: 'Palestra 2 – Régis Neto', text: 'Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.', tag: 'PALESTRA 02' },
   { time: '14h30–15h20', period: 'afternoon', title: 'Palestra 3 – Lucas Nicácio', text: 'O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.', tag: 'PALESTRA 03' },
-  { time: '15h30–16h00', period: 'afternoon', title: 'Transição para encerramento', text: 'Organização do coffee break e preparação do material audiovisual final.', tag: 'TRANSIÇÃO' },
   { time: '16h10', period: 'afternoon', title: 'Coffee break e networking', text: 'Conexões livres, depoimentos finais e exibição do trailer, se pronto.', tag: 'NETWORKING' },
 ];
 
