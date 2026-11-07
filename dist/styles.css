@@ -676,30 +676,61 @@ h1 em {
 }
 
 .principles-strip {
+  --principles-gap: clamp(20px, 2vw, 32px);
+  width: 100%;
+  overflow: hidden;
   background: #101c27;
   border-block: 1px solid #dfb57515;
-  color: #d6c3a5
+  color: #d6c3a5;
 }
 
-.principles-strip>.container {
+.principles-track {
   display: flex;
-  justify-content: space-between;
+  width: max-content;
+  animation: principles-marquee 42s linear infinite;
+  will-change: transform;
+}
+
+.principles-group {
+  display: flex;
   align-items: center;
-  height: 62px;
-  gap: 20px
+  flex: 0 0 auto;
+  width: max-content;
+}
+
+.principles-sequence {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: var(--principles-gap);
+  padding-inline-end: var(--principles-gap);
 }
 
 .principles-strip span {
+  flex: 0 0 auto;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.6px;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .principles-strip .strip-star {
   font-size: 22px;
   font-weight: 400;
-  color: var(--gold)
+  color: var(--gold);
+}
+
+@keyframes principles-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .principles-strip { overflow-x: auto; scrollbar-width: none; }
+  .principles-strip::-webkit-scrollbar { display: none; }
+  .principles-track { animation: none; will-change: auto; }
+  .principles-group[aria-hidden="true"] { display: none; }
+  .principles-sequence:not(:first-child) { display: none; }
 }
 
 .section-light {
@@ -1902,21 +1933,9 @@ dialog::backdrop {
     gap: 12px
   }
 
-  .principles-strip>.container {
-    gap: 13px
-  }
-
   .principles-strip span {
     font-size: 12px;
     letter-spacing: .6px
-  }
-
-  .principles-strip span:last-child {
-    display: none
-  }
-
-  .principles-strip .strip-star:last-of-type {
-    display: none
   }
 
   .experience,
@@ -2271,20 +2290,9 @@ dialog::backdrop {
     font-size: 21px
   }
 
-  .principles-strip>.container {
-    height: 49px;
-    gap: 15px;
-    justify-content: space-between
-  }
-
   .principles-strip span {
     font-size: 12px;
     letter-spacing: .8px
-  }
-
-  .principles-strip span:nth-of-type(5),
-  .principles-strip span:nth-of-type(6) {
-    display: none
   }
 
   .principles-strip .strip-star {
@@ -4607,9 +4615,7 @@ dialog::backdrop {
   border-color: #ffffff35
 }
 
-.hero-mobile-background {
-  display: none
-}
+
 
 @media print {
   .agenda-intro:before {
@@ -4635,13 +4641,14 @@ dialog::backdrop {
 
 @media(max-width:650px) {
   .hero {
-    background: var(--navy)
+    background: url("assets/executivos-mobile.png") center bottom / 100% auto no-repeat, var(--navy);
+    padding-block-end: clamp(234px, 73vw, 314px)
   }
 
   .hero-inner {
     min-height: 0;
     padding-top: 56px;
-    padding-bottom: 34px
+    padding-bottom: 0
   }
 
   .hero-copy {
@@ -4662,20 +4669,8 @@ dialog::backdrop {
     gap: 20px
   }
 
-  .hero-mobile-background {
-    display: block;
-    height: 250px;
-    background: linear-gradient(0deg, #07111d30, transparent 35%), url("assets/executivos-mobile.png") center bottom/cover no-repeat
-  }
-
   .hero-bottom {
-    height: auto;
-    min-height: 66px;
-    gap: 16px
-  }
-
-  .hero-bottom>a {
-    gap: 10px
+    display: none
   }
 }
 
