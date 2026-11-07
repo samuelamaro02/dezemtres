@@ -1,25 +1,24 @@
 const program = [
-  { time: '08h – 08h50', period: 'morning', title: 'Boas-vindas e credenciamento', text: 'O primeiro encontro. Chegue, conheça o espaço e comece suas conexões.', tag: 'RECEPÇÃO' },
-  { time: '09h – 09h20', period: 'morning', title: 'Abertura do Experience', text: 'Boas-vindas dos sócios e apresentação do propósito do 10 em 3.', tag: 'ABERTURA' },
-  { time: '09h30 – 11h', period: 'morning', title: 'Reconhecer. Celebrar. Experienciar.', text: 'Homenagens, premiações e momentos de reconhecimento da comunidade.', tag: 'EXPERIÊNCIA' },
-  { time: '11h – 12h', period: 'morning', title: 'Pausa para o almoço', text: 'Um intervalo para recarregar e continuar as conversas.', tag: 'INTERVALO' },
-  { time: '12h – 12h30', period: 'afternoon', title: 'Retorno e networking', text: 'Novas conexões antes dos conteúdos da tarde.', tag: 'CONEXÕES' },
-  { time: '12h30 – 13h20', period: 'afternoon', title: 'Palestrante surpresa', text: 'Primeiro bloco de conteúdo da tarde. Revelação e tema em breve.', tag: 'PALESTRA 02', surprise: true },
-  { time: '13h30 – 14h20', period: 'afternoon', title: 'Palestrante surpresa', text: 'Segundo bloco de conteúdo da tarde. Revelação e tema em breve.', tag: 'PALESTRA 03', surprise: true },
-  { time: '14h30 – 15h20', period: 'afternoon', title: 'Palestrante surpresa', text: 'Terceiro bloco de conteúdo da tarde. Revelação e tema em breve.', tag: 'PALESTRA 04', surprise: true },
-  { time: '15h30 – 16h', period: 'afternoon', title: 'Um café. Muitas possibilidades.', text: 'Coffee break, networking e conexões para levar além do evento.', tag: 'NETWORKING' },
-  { time: '16h – 18h', period: 'afternoon', title: 'Programação a confirmar', text: 'O evento segue até as 18h. Os detalhes deste período serão divulgados pela organização.', tag: 'EM BREVE' },
+  { time: '08h–08h50', period: 'morning', title: 'Recepção e credenciamento', text: 'Boas-vindas, recepção, registros fotográficos e primeiras conexões.', tag: 'RECEPÇÃO' },
+  { time: '09h00', period: 'morning', title: 'Abertura oficial: o movimento Dez em Três', text: 'Raniely Neves e Lucas Nicácio apresentam a visão do ecossistema e a proposta que conecta caixa e corpo.', tag: 'ABERTURA' },
+  { time: '11h00–12h00', period: 'morning', title: 'Almoço', text: 'Pausa para alimentação e relacionamento entre os participantes.', tag: 'INTERVALO' },
+  { time: '12h00–12h30', period: 'afternoon', title: 'Retorno e networking', text: 'Novas conexões antes dos conteúdos da tarde.', tag: 'CONEXÕES' },
+  { time: '12h30–13h20', period: 'afternoon', title: 'Palestra 1 – Vinícius', text: 'Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.', tag: 'PALESTRA 01' },
+  { time: '13h30–14h20', period: 'afternoon', title: 'Palestra 2 – Régis Neto', text: 'Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.', tag: 'PALESTRA 02' },
+  { time: '14h30–15h20', period: 'afternoon', title: 'Palestra 3 – Lucas Nicácio', text: 'O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.', tag: 'PALESTRA 03' },
+  { time: '15h30–16h00', period: 'afternoon', title: 'Transição para encerramento', text: 'Organização do coffee break e preparação do material audiovisual final.', tag: 'TRANSIÇÃO' },
+  { time: '16h10', period: 'afternoon', title: 'Coffee break e networking', text: 'Conexões livres, depoimentos finais e exibição do trailer, se pronto.', tag: 'NETWORKING' },
 ];
 
 const speakers = {
-  regis: { name: 'Régis Neto', announcement: 'assets/regis-confirmado.png' },
-  vinicius: { name: 'Vinícius de Morais', announcement: 'assets/vinicius-confirmado.png' },
+  regis: { name: 'Régis Neto', announcement: 'assets/regis-confirmado.png', description: '13h30–14h20 — Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.' },
+  vinicius: { name: 'Vinícius de Morais', announcement: 'assets/vinicius-confirmado.png', description: '12h30–13h20 — Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.' },
   lucas: {
     name: 'Lucas Nicácio',
     announcement: 'assets/lucas-nicacio.png',
     imageAlt: 'Lucas Nicácio, um dos idealizadores do 10 em 3 Experience',
     role: 'UM DOS IDEALIZADORES',
-    description: 'Lucas Nicácio é um dos idealizadores do 10 em 3 Experience, um encontro que conecta inteligência, equilíbrio e resultados em uma programação de conhecimento, reconhecimento e networking.',
+    description: '14h30–15h20 — O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.',
   },
 };
 
@@ -99,7 +98,7 @@ document.querySelectorAll('[data-speaker]').forEach(button => button.addEventLis
   image.src = speaker.announcement;
   image.alt = speaker.imageAlt || `Anúncio de ${speaker.name}, palestrante confirmado no 10 em 3 Experience`;
   speakerDialog.querySelector('.eyebrow').textContent = speaker.role || 'PRESENÇA CONFIRMADA';
-  speakerDialog.querySelector('.speaker-dialog-copy > p:not(.eyebrow)').textContent = speaker.description || 'No palco do 10 em 3 Experience. Tema e horário da participação serão divulgados em breve.';
+  speakerDialog.querySelector('.speaker-dialog-copy > p:not(.eyebrow)').textContent = speaker.description || 'Confira o horário e o tema desta participação na programação do evento.';
   openDialog(speakerDialog);
 }));
 document.querySelector('#speaker-agenda-link').addEventListener('click', () => speakerDialog.close());

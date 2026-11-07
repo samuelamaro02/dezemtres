@@ -46,3 +46,15 @@ Lucas Nicácio é o idealizador do evento, com destaque na abertura e em uma se�
 ## Hospedagem
 
 O conteúdo é estático, sem dependências de execução ou etapa de build. A configuração está em `.openai/hosting.json`.
+
+## Meta Pixel e Conversions API
+
+O site envia somente `PageView`. O Pixel roda no navegador e a rota `api/pageview.js` envia o mesmo evento pela Conversions API, usando o mesmo `event_id` para deduplicação. O token é lido apenas no servidor.
+
+Configure estas variáveis no ambiente da Vercel (Production, Preview e Development conforme necessário):
+
+- `PIXEL_META`: ID do Pixel/dataset.
+- `TOKEN_META_API`: token de acesso da Conversions API; mantenha-o como variável secreta.
+- `META_GRAPH_API_VERSION`: opcional; versão da Graph API, por padrão `v25.0`.
+
+O arquivo `.env` local não deve ser publicado nem versionado. O endpoint retorna `503` quando as credenciais não estão configuradas; nesse caso, o Pixel do navegador continua ativo.
