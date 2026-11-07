@@ -35,7 +35,7 @@ Essa configuração controla a exibição no site; não altera o cadastro ou o f
 
 As quantidades são o total previsto por lote, informado pelo organizador. O site não calcula estoque restante; a disponibilidade é confirmada no checkout.
 
-Lucas Nicácio é o idealizador do evento, com destaque na abertura e em uma seção própria antes dos convidados. Régis Neto e Vinícius de Morais são os palestrantes confirmados. As participações ainda não reveladas são apresentadas como “Palestrante surpresa”, com três cards de silhuetas genéricas no carrossel de convidados. Os blocos da tarde na programação não exibem silhuetas. O carrossel reúne Régis Neto, Vinícius de Morais e três palestrantes surpresa, com setas, teclado e deslize no celular, sem rotação automática. Nenhuma biografia ou associação dos nomes confirmados a horários foi presumida.
+Lucas Nicácio é o idealizador do evento, com destaque na abertura e em uma seção própria antes dos convidados. Régis Neto e Vinícius de Morais são os palestrantes confirmados. As participações ainda não reveladas não aparecem no carrossel. Os blocos da tarde na programação não exibem silhuetas. O carrossel reúne apenas Régis Neto, Vinícius de Morais e Lucas Nicácio, com setas, teclado e deslize no celular, sem rotação automática. Nenhuma biografia ou associação dos nomes confirmados a horários foi presumida.
 
 ## Verificação
 
