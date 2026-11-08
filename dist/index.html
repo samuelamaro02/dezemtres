@@ -14,7 +14,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/editorial-regular.otf" as="font" type="font/otf" crossorigin>
   <link rel="preload" href="assets/interface-regular.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=833a795c0fbe">
+  <link rel="stylesheet" href="styles.css?v=agenda-redesign-20261107">
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1674581940986929');
@@ -22,7 +22,9 @@
     fbq('track', 'PageView', {}, { eventID: window.metaPageViewEventId });
     fetch('/api/pageview', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ eventId: window.metaPageViewEventId, eventSourceUrl: window.location.href }), keepalive: true }).catch(() => {});
   </script>
-  <script src="app.js?v=speakers-lucas-20261107" type="module"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+  <script defer src="app.js?v=agenda-redesign-20261107"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -129,11 +131,24 @@
 
     <section class="agenda section-light" id="programacao" aria-labelledby="agenda-title">
       <div class="container agenda-layout">
-        <div class="agenda-intro reveal"><p class="eyebrow">04 / CADA MOMENTO CONTA</p><h2 id="agenda-title">Um dia inteiro.<br><em>Novos caminhos.</em></h2><p>Da primeira conexão ao último café. Veja o que está previsto para o seu dia no Experience.</p><div class="agenda-time"><svg><use href="#clock"/></svg><div><strong>12/12/2026 · 08h às 18h</strong><span>Palestras, conex&otilde;es e encerramento</span></div></div><button class="text-link print-button" id="print-agenda">Salvar programação <svg><use href="#download"/></svg></button></div>
-        <div class="agenda-content reveal">
-          <div class="agenda-filter" role="group" aria-label="Filtrar programação por período"><button class="active" data-period="all" aria-pressed="true">Dia completo</button><button data-period="morning" aria-pressed="false">Manhã</button><button data-period="afternoon" aria-pressed="false">Tarde</button></div>
-          <div class="agenda-items" id="agenda-items" aria-live="polite"></div>
-          <p class="agenda-bottom-note">Intervalos entre os blocos permitem transições e participações previstas na programação.</p>
+        <div class="agenda-intro">
+          <p class="eyebrow">04 / CADA MOMENTO CONTA</p>
+          <h2 id="agenda-title">Um dia inteiro.<br><em>Novos caminhos.</em></h2>
+          <p>Da primeira conex&atilde;o ao &uacute;ltimo caf&eacute;. Veja o que est&aacute; previsto para o seu dia no Experience.</p>
+          <div class="agenda-time"><svg aria-hidden="true"><use href="#clock"/></svg><div><strong>12/12/2026 &middot; 08h &agrave;s 18h</strong><span>Palestras, conex&otilde;es e encerramento</span></div></div>
+          <button class="text-link print-button" id="print-agenda" type="button">Salvar programa&ccedil;&atilde;o <svg aria-hidden="true"><use href="#download"/></svg></button>
+        </div>
+        <div class="agenda-content">
+          <div class="agenda-filter" role="group" aria-label="Filtrar programa&ccedil;&atilde;o por per&iacute;odo" aria-keyshortcuts="ArrowLeft ArrowRight Home End">
+            <button type="button" class="active" data-period="all" aria-pressed="true">Dia completo</button>
+            <button type="button" data-period="morning" aria-pressed="false">Manh&atilde;</button>
+            <button type="button" data-period="afternoon" aria-pressed="false">Tarde</button>
+          </div>
+          <div class="agenda-items" id="agenda-items" aria-live="polite" aria-relevant="additions removals">
+            <div class="agenda-timeline-track" aria-hidden="true"><span class="agenda-timeline-fill"></span></div>
+            <div class="agenda-list" id="agenda-list"></div>
+          </div>
+          <p class="agenda-bottom-note">Intervalos entre os blocos permitem transi&ccedil;&otilde;es e participa&ccedil;&otilde;es previstas na programa&ccedil;&atilde;o.</p>
         </div>
       </div>
     </section>

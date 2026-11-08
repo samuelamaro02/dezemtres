@@ -22,40 +22,164 @@ const speakers = {
 };
 
 const agendaItems = document.querySelector('#agenda-items');
-function renderProgram(period = 'all') {
-  const entries = program.filter(item => period === 'all' || item.period === period);
-  agendaItems.replaceChildren(...entries.map(item => {
-    const article = document.createElement('article');
-    article.className = 'agenda-item';
-    const time = document.createElement('span');
-    time.className = 'agenda-item-time';
-    time.textContent = item.time;
-    const content = document.createElement('div');
-    const label = document.createElement('span');
-    label.className = 'agenda-tag';
-    label.textContent = item.tag;
-    const heading = document.createElement('h3');
-    heading.textContent = item.title;
-    const description = document.createElement('p');
-    description.textContent = item.text;
-    content.append(label, heading, description);
-    article.append(time, content);
-    return article;
-  }));
+const agendaList = document.querySelector('#agenda-list');
+const agendaFilter = document.querySelector('.agenda-filter');
+const agendaFilterButtons = [...agendaFilter.querySelectorAll('[data-period]')];
+const gsapEngine = window.gsap;
+const scrollTriggerPlugin = window.ScrollTrigger;
+const agendaTimelineFill = agendaItems.querySelector('.agenda-timeline-fill');
+let agendaMotionEnabled = false;
+let agendaFilterTween = null;
+
+if (gsapEngine && scrollTriggerPlugin) gsapEngine.registerPlugin(scrollTriggerPlugin);
+
+function clearAgendaScrollTriggers() {
+  if (!scrollTriggerPlugin) return;
+  scrollTriggerPlugin.getAll()
+    .filter(trigger => trigger.trigger === agendaList || trigger.trigger === agendaItems || trigger.trigger?.closest?.('#agenda-items'))
+    .forEach(trigger => trigger.kill());
 }
+
+function setupAgendaScrollTriggers() {
+  if (!agendaMotionEnabled || !gsapEngine || !scrollTriggerPlugin) return;
+  clearAgendaScrollTriggers();
+  const items = [...agendaList.querySelectorAll('.agenda-item')];
+  gsapEngine.set(agendaTimelineFill, { scaleY: 0, transformOrigin: 'top' });
+  gsapEngine.to(agendaTimelineFill, {
+    scaleY: 1,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: agendaList,
+      start: 'top 76%',
+      end: 'bottom 64%',
+      scrub: 0.4,
+      invalidateOnRefresh: true,
+    },
+  });
+
+  const upcomingItems = items.filter(item => item.getBoundingClientRect().top >= window.innerHeight * 0.9);
+  if (upcomingItems.length) {
+    gsapEngine.set(upcomingItems, { autoAlpha: 0, y: 12 });
+    scrollTriggerPlugin.batch(upcomingItems, {
+      start: 'top 88%',
+      interval: 0.06,
+      batchMax: 8,
+      once: true,
+      onEnter: batch => gsapEngine.to(batch, {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: 0.06,
+        ease: 'power2.out',
+        overwrite: true,
+      }),
+    });
+  }
+}
+
+function createAgendaItem(item) {
+  const article = document.createElement('article');
+  article.className = 'agenda-item';
+  article.dataset.period = item.period;
+  const time = document.createElement('span');
+  time.className = 'agenda-item-time';
+  time.textContent = item.time;
+  const content = document.createElement('div');
+  content.className = 'agenda-item-content';
+  const label = document.createElement('span');
+  label.className = 'agenda-tag';
+  label.dataset.category = item.tag;
+  label.textContent = item.tag;
+  const heading = document.createElement('h3');
+  heading.textContent = item.title;
+  const description = document.createElement('p');
+  description.textContent = item.text;
+  content.append(label, heading, description);
+  article.append(time, content);
+  return article;
+}
+
+function renderProgram(period = 'all', animate = false) {
+  agendaFilterTween?.kill();
+  agendaFilterTween = null;
+  clearAgendaScrollTriggers();
+  const entries = program.filter(item => period === 'all' || item.period === period);
+  agendaList.replaceChildren(...entries.map(createAgendaItem));
+  const items = [...agendaList.querySelectorAll('.agenda-item')];
+
+  if (!agendaMotionEnabled || !animate || !gsapEngine) {
+    if (agendaMotionEnabled) setupAgendaScrollTriggers();
+    return;
+  }
+
+  const visibleItems = items.filter(item => {
+    const rect = item.getBoundingClientRect();
+    return rect.bottom > 0 && rect.top < window.innerHeight;
+  });
+  const upcomingItems = items.filter(item => !visibleItems.includes(item));
+  gsapEngine.set(upcomingItems, { autoAlpha: 1, y: 0 });
+  gsapEngine.set(visibleItems, { autoAlpha: 0, y: 12 });
+  if (!visibleItems.length) {
+    setupAgendaScrollTriggers();
+    scrollTriggerPlugin.refresh(true);
+    return;
+  }
+  agendaFilterTween = gsapEngine.to(visibleItems, {
+    autoAlpha: 1,
+    y: 0,
+    duration: 0.2,
+    stagger: 0.025,
+    ease: 'power2.out',
+    onComplete: () => {
+      agendaFilterTween = null;
+      setupAgendaScrollTriggers();
+      scrollTriggerPlugin.refresh(true);
+    },
+  });
+}
+
 renderProgram();
 
-document.querySelectorAll('[data-period]').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('[data-period]').forEach(item => {
-      const selected = item === button;
-      item.classList.toggle('active', selected);
-      item.setAttribute('aria-pressed', String(selected));
-    });
-    renderProgram(button.dataset.period);
+function selectAgendaFilter(button) {
+  agendaFilterButtons.forEach(item => {
+    const selected = item === button;
+    item.classList.toggle('active', selected);
+    item.setAttribute('aria-pressed', String(selected));
   });
+  renderProgram(button.dataset.period, true);
+  button.focus({ preventScroll: true });
+}
+
+agendaFilterButtons.forEach(button => button.addEventListener('click', () => selectAgendaFilter(button)));
+agendaFilter.addEventListener('keydown', event => {
+  const current = agendaFilterButtons.indexOf(document.activeElement);
+  if (current < 0) return;
+  let next = current;
+  if (event.key === 'ArrowRight') next = (current + 1) % agendaFilterButtons.length;
+  else if (event.key === 'ArrowLeft') next = (current - 1 + agendaFilterButtons.length) % agendaFilterButtons.length;
+  else if (event.key === 'Home') next = 0;
+  else if (event.key === 'End') next = agendaFilterButtons.length - 1;
+  else return;
+  event.preventDefault();
+  agendaFilterButtons[next].focus();
+  selectAgendaFilter(agendaFilterButtons[next]);
 });
 
+if (gsapEngine && scrollTriggerPlugin) {
+  const agendaMedia = gsapEngine.matchMedia();
+  agendaMedia.add('(prefers-reduced-motion: no-preference)', () => {
+    agendaMotionEnabled = true;
+    setupAgendaScrollTriggers();
+    return () => {
+      agendaMotionEnabled = false;
+      agendaFilterTween?.kill();
+      agendaFilterTween = null;
+      clearAgendaScrollTriggers();
+      gsapEngine.set(agendaList.querySelectorAll('.agenda-item'), { clearProps: 'opacity,visibility,transform' });
+      gsapEngine.set(agendaTimelineFill, { clearProps: 'transform' });
+    };
+  });
+}
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('#mobile-menu');
 function closeMenu() {
