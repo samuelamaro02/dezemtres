@@ -21,14 +21,19 @@ const updated = html.replace(/<article\b[^>]*data-lote="([^"]+)"[^>]*>[\s\S]*?<\
   }
 
   card = card.replace(/class="([^"]+)"/, (_, classes) => {
-    const clean = classes.split(/\s+/).filter(value => value !== 'ticket-locked');
+    const clean = classes.split(/\s+/).filter(value => value !== 'ticket-locked' && value !== 'ticket-soldout');
     if (!lote.ativo) clean.push('ticket-locked');
+    if (!lote.ativo && lote.esgotado) clean.push('ticket-soldout');
     return `class="${clean.join(' ')}"`;
   });
-  card = card.replace(/(<p class="ticket-status">)[\s\S]*?(<\/p>)/, `$1${lote.ativo ? 'DISPONÍVEL AGORA' : 'BLOQUEADO'}$2`);
+  const status = lote.ativo ? 'DISPONÍVEL AGORA' : lote.esgotado ? 'ESGOTADO' : 'BLOQUEADO';
+  card = card.replace(/(<p class="ticket-status">)[\s\S]*?(<\/p>)/, `$1${status}$2`);
 
   let action;
-  if (lote.ativo) {
+  if (!lote.ativo && lote.esgotado) {
+    const label = escapeHtml(`${name}: esgotado`);
+    action = `<button type="button" class="button ticket-button" disabled aria-disabled="true" aria-label="${label}">Esgotado</button>`;
+  } else if (lote.ativo) {
     const checkout = new URL(lote.checkout);
     if (checkout.protocol !== 'https:' || checkout.hostname !== 'pay.kiwify.com.br') {
       throw new Error(`Checkout inválido: ${id}`);

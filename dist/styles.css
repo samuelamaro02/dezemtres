@@ -4911,6 +4911,7 @@ dialog::backdrop {
   white-space: nowrap;
 }
 .tickets .ticket-list-item .ticket-button::before { content: "Bloqueado"; font-size: 14px; }
+.tickets .ticket-list-item.ticket-soldout .ticket-button::before { content: "Esgotado"; }
 .tickets .ticket-list-item .ticket-button svg { width: 15px; height: 15px; margin-left: 8px; }
 .tickets .ticket-list-item .ticket-button:disabled { cursor: default; }
 .tickets .ticket-list-item .ticket-button:disabled:hover { background: transparent; color: #6b6559; transform: none; }

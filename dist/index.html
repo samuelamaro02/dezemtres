@@ -18,7 +18,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/editorial-regular.otf" as="font" type="font/otf" crossorigin>
   <link rel="preload" href="assets/interface-regular.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=agenda-redesign-20261107">
+  <link rel="stylesheet" href="styles.css?v=lotes-20261113">
   <script>
     !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1674581940986929');
@@ -392,26 +392,26 @@
           </div>
         </div>
         <div class="ticket-grid">
-          <article class="ticket-card ticket-featured reveal ticket-locked" data-lote="fundador">
+          <article class="ticket-card ticket-featured reveal" data-lote="antecipado">
             <div class="ticket-featured-top">
-              <p class="ticket-status">BLOQUEADO</p><span class="ticket-order">01</span>
+              <p class="ticket-status">DISPONÍVEL AGORA</p><span class="ticket-order">02</span>
             </div>
-            <h3>Lote Fundador</h3>
-            <p class="ticket-price"><span>R$</span> 197<span>,00</span></p>
-            <p class="ticket-unit">por ingresso</p>
-            <p class="ticket-capacity">5 ingressos neste lote</p>
-            <button type="button" class="button ticket-button" disabled aria-disabled="true" aria-label="Lote Fundador: lote bloqueado, aguardando liberação">Lote bloqueado <svg aria-hidden="true"><use href="#lock"/></svg></button>
-          </article>
-          <div class="ticket-list-heading">PR&Oacute;XIMOS LOTES</div>
-          <article class="ticket-card ticket-list-item reveal" data-lote="antecipado">
-            <span class="ticket-order">02</span>
-            <div class="ticket-line-info">
-              <h3>Lote 1 — Antecipado</h3>
-              <p class="ticket-capacity">8 ingressos neste lote</p>
-            </div>
+            <h3>Lote 1 — Antecipado</h3>
             <p class="ticket-price"><span>R$</span> 227<span>,00</span></p>
-            <p class="ticket-status">DISPONÍVEL AGORA</p>
+            <p class="ticket-unit">por ingresso</p>
+            <p class="ticket-capacity">8 ingressos neste lote</p>
             <a class="button ticket-button" href="https://pay.kiwify.com.br/q43ASxv" target="_blank" rel="noopener noreferrer" aria-label="Comprar ingresso do Lote 1 — Antecipado por R$ 227,00 na Kiwify, em nova aba">Comprar ingresso <svg aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+          </article>
+          <div class="ticket-list-heading">DEMAIS LOTES</div>
+          <article class="ticket-card ticket-list-item reveal ticket-locked ticket-soldout" data-lote="fundador">
+            <span class="ticket-order">01</span>
+            <div class="ticket-line-info">
+              <h3>Lote Fundador</h3>
+              <p class="ticket-capacity">5 ingressos neste lote</p>
+            </div>
+            <p class="ticket-price"><span>R$</span> 197<span>,00</span></p>
+            <p class="ticket-status">ESGOTADO</p>
+            <button type="button" class="button ticket-button" disabled aria-disabled="true" aria-label="Lote Fundador: esgotado">Esgotado</button>
           </article>
           <article class="ticket-card ticket-list-item reveal ticket-locked" data-lote="experiencia">
             <span class="ticket-order">03</span>
@@ -501,7 +501,7 @@
           href="#ingressos">Quero viver o Experience <svg>
             <use href="#arrow-up-right" />
           </svg></a>
-        <div class="cta-note"><span></span>Ingressos a partir de R$ 197,00</div>
+        <div class="cta-note"><span></span>Ingressos a partir de R$ 227,00</div>
       </div>
     </section>
   </main>
