@@ -1,23 +1,31 @@
 const program = [
-  { time: '08h–08h50', period: 'morning', title: 'Recepção e credenciamento', text: 'Boas-vindas, recepção, registros fotográficos e primeiras conexões.', tag: 'RECEPÇÃO' },
-  { time: '09h00', period: 'morning', title: 'Abertura oficial: o movimento Dez em Três', text: 'Raniely Neves e Lucas Nicácio apresentam a visão do ecossistema e a proposta que conecta caixa e corpo.', tag: 'ABERTURA' },
-  { time: '11h00–12h00', period: 'morning', title: 'Almoço', text: 'Pausa para alimentação e relacionamento entre os participantes.', tag: 'INTERVALO' },
-  { time: '12h00–12h30', period: 'afternoon', title: 'Retorno e networking', text: 'Novas conexões antes dos conteúdos da tarde.', tag: 'CONEXÕES' },
-  { time: '12h30–13h20', period: 'afternoon', title: 'Palestra 1 – Vinícius', text: 'Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.', tag: 'PALESTRA 01' },
-  { time: '13h30–14h20', period: 'afternoon', title: 'Palestra 2 – Régis Neto', text: 'Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.', tag: 'PALESTRA 02' },
-  { time: '14h30–15h20', period: 'afternoon', title: 'Palestra 3 – Lucas Nicácio', text: 'O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.', tag: 'PALESTRA 03' },
-  { time: '16h10', period: 'afternoon', title: 'Coffee break e networking', text: 'Conexões livres, depoimentos finais e exibição do trailer, se pronto.', tag: 'NETWORKING' },
+  { time: '08h40–09h15', period: 'morning', title: 'Recepção e credenciamento', text: 'Boas-vindas, recepção, registros fotográficos e primeiras conexões.', tag: 'RECEPÇÃO' },
+  { time: '09h15–09h40', period: 'morning', title: 'Abertura oficial: o movimento Dez em Três', text: 'Abertura do evento com o vídeo do 10 em 3. Em seguida, Raniely Neves e Lucas Nicácio apresentam a visão do ecossistema e a proposta que conecta caixa e corpo.', tag: 'ABERTURA' },
+  { time: '09h45–10h35', period: 'morning', title: 'Palestra 1 – Débora Salgado', text: 'Mentalidade do empreendedor.', tag: 'PALESTRA 01' },
+  { time: '10h45–11h35', period: 'morning', title: 'Palestra 2 – Vinícius de Morais', text: 'Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.', tag: 'PALESTRA 02' },
+  { time: '12h00–13h00', period: 'afternoon', title: 'Almoço', text: 'Pausa para alimentação e relacionamento entre os participantes.', tag: 'INTERVALO' },
+  { time: '13h00–13h30', period: 'afternoon', title: 'Reconhecimento e premiação', text: 'Um momento para reconhecer e celebrar quem faz parte do movimento.', tag: 'RECONHECIMENTO' },
+  { time: '13h40–14h30', period: 'afternoon', title: 'Palestra 3 – Lucas Nicácio', text: 'O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.', tag: 'PALESTRA 03' },
+  { time: '14h35–15h25', period: 'afternoon', title: 'Palestra 4 – Régis Neto', text: 'Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.', tag: 'PALESTRA 04' },
+  { time: '15h50–16h35', period: 'afternoon', title: 'Coffee break e networking', text: 'Conexões livres e encerramento do dia.', tag: 'NETWORKING' },
 ];
 
 const speakers = {
-  regis: { name: 'Régis Neto', announcement: 'assets/regis-confirmado.png', description: '13h30–14h20 — Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.' },
-  vinicius: { name: 'Vinícius de Morais', announcement: 'assets/vinicius-confirmado.png', description: '12h30–13h20 — Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.' },
+  debora: {
+    name: 'Débora Salgado',
+    announcement: 'assets/debora-salgado.webp',
+    imageAlt: 'Débora Salgado, psicóloga de empresários e palestrante confirmada no 10 em 3 Experience',
+    role: 'PSICÓLOGA DE EMPRESÁRIOS',
+    description: '09h45–10h35 — Mentalidade do empreendedor.',
+  },
+  regis: { name: 'Régis Neto', announcement: 'assets/regis-confirmado.png', description: '14h35–15h25 — Do conteúdo ao negócio: como transformar presença em oportunidades comerciais.' },
+  vinicius: { name: 'Vinícius de Morais', announcement: 'assets/vinicius-confirmado.png', description: '10h45–11h35 — Reforma Tributária: como preparar sua empresa e proteger sua lucratividade.' },
   lucas: {
     name: 'Lucas Nicácio',
     announcement: 'assets/lucas-nicacio.png',
     imageAlt: 'Lucas Nicácio, um dos idealizadores do 10 em 3 Experience',
     role: 'UM DOS IDEALIZADORES',
-    description: '14h30–15h20 — O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.',
+    description: '13h40–14h30 — O empresário é o ativo mais importante do negócio: energia, disciplina e performance para liderar melhor.',
   },
 };
 
