@@ -16,7 +16,7 @@ A agenda foi adaptada do cronograma fornecido pela organização. Etapas interna
 
 ## Informações pendentes
 
-O evento está confirmado para 12/12/2026, das 08h às 18h, no Eco Business Center, R. Antônio Rabelo Júnior, 161, Miramar, João Pessoa – PB, CEP 58032-090. A associação entre palestrantes e horários e os detalhes das 16h às 18h ainda precisam ser confirmados. Esses detalhes da programação aparecem como informações a confirmar. O mapa integrado e os links de rota usam o endereço fornecido pela organização.
+O evento está confirmado para 12/12/2026, das 08h30 às 17h, no Eco Business Center, R. Antônio Rabelo Júnior, 161, Miramar, João Pessoa – PB, CEP 58032-090. A associação entre palestrantes e horários e os detalhes das 16h às 18h ainda precisam ser confirmados. Esses detalhes da programação aparecem como informações a confirmar. O mapa integrado e os links de rota usam o endereço fornecido pela organização.
 
 ## Ingressos
 
